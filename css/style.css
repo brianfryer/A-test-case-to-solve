@@ -347,12 +347,25 @@ table {
    TOP LEVEL ELEMENTS
    ========================================================================== */
 body {
-  font-family: Verdana, sans-serif; }
+  font-family: Verdana, sans-serif;
+  background-color: #fafafa; }
 
 a {
   color: #3e00f2; }
   a:hover {
     color: #250091; }
+
+dt {
+  margin: 0 0 10px;
+  font-weight: bold; }
+
+dd {
+  margin: 0; }
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #ccc; }
 
 /* ==========================================================================
    STRUCTURAL ELEMENTS
@@ -370,19 +383,19 @@ section {
   float: left;
   /* margin- and padding-bottom set to -9999px to make sections the same height */
   margin-bottom: -99999px;
-  padding: 0 40px 99999px 20px; }
+  padding: 0 40px 99999px 20px;
+  background-color: #fff; }
   section.sidebar {
     border-right: 1px solid black;
     background-color: #d3d3d3; }
   section.main {
-    width: 800px; }
+    width: 760px; }
 
 aside {
   margin-top: 280px;
   padding: 10px 0;
   text-align: center; }
 
-/* NAVIGATION ELEMENTS */
 nav > ul {
   margin: 0;
   padding: 0;
@@ -428,3 +441,9 @@ nav > ul {
       left: 30px;
       content: attr(title);
       color: black; }
+
+/* ==========================================================================
+   "ID" LEVEL ELEMENTS
+   ========================================================================== */
+footer dt {
+  margin-left: 10px; }
